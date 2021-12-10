@@ -72,17 +72,22 @@
 <script>
 export default{
     name: 'RandomUser',
-    props: ['name','surname','phone','email','locate','nickname'],
+    props: {
+        'name':"",
+        'surname':"",
+        'phone':"",
+        'email':"",
+        'locate':"",
+        'nickname':"",
+    },
 
     methods:{
-        /*
         getRandomUser(){
             let request = new XMLHttpRequest();
             request.open("GET", "https://randomuser.me/api/", true);
             let response = request.responseText.json();
             request.send();
         } 
-        */
     }
 }
 </script>
